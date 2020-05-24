@@ -8,7 +8,7 @@ services:
     volumes:
       - ./website:/var/www/html
     environment:
-      USERNAME: "anlei"
+      USERNAME: "toto"
       PASSWORD: "python"
     networks:
       - pozos
@@ -16,9 +16,6 @@ services:
       - 8002:80
     depends_on:
       - pozos-api
-
- 
-
   # API
   pozos-api:
     hostname: pozos-api
